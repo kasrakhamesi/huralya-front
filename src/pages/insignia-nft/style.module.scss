@@ -1,0 +1,498 @@
+// Breakpoints
+$bp-xsmall: 37.5em; // 600px
+$bp-small: 48em; // 768px
+$bp-medium: 64em; // 1024px
+$bp-large: 85.375em; // 1366px
+$bp-xlarge: 120em; // 1920px
+$bp-xxlarge: 160em; // 2560px
+
+// Media Queries
+$mq-xsmall: '(max-width: #{$bp-xsmall})';
+$mq-small: '(max-width: #{$bp-small})';
+$mq-medium: '(max-width: #{$bp-medium})';
+$mq-large: '(max-width: #{$bp-large})';
+$mq-xlarge: '(max-width: #{$bp-xlarge})';
+$mq-xxlarge: '(max-width: #{$bp-xxlarge})';
+$mq-retina: '(-webkit-max-device-pixel-ratio: 2), (max-resolution: 192dpi)';
+
+.card {
+  padding: 15px;
+  border-radius: 20px;
+}
+
+.btn {
+  padding: 5px;
+  cursor: pointer;
+  transition: all 0.2s;
+  background-color: #282f42;
+  border: 1px solid #595f71;
+  border-radius: 63px;
+  font-family: 'Alatsi';
+  font-weight: 400;
+  font-size: 1rem;
+  color: #595f71;
+}
+.btn:hover {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-color: transparent;
+}
+.btn:active {
+  box-shadow: inset 3px -4px 16px rgba(0, 0, 0, 0.25);
+  border-color: transparent;
+}
+
+.insigniaNFTPage {
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  height: 550px;
+  width: 100%;
+  min-width: 100%;
+  font-family: 'Alatsi';
+  font-weight: 400;
+  padding: 20px;
+  column-gap: 15px;
+
+  background: linear-gradient(
+    67.14deg,
+    rgba(9, 144, 152, 0) -13.2%,
+    #1d3649 52.7%
+  );
+  border-radius: 27px;
+
+  .investment {
+    width: 78%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .investmentTitle {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      column-gap: 1rem;
+      padding-left: 45px;
+      .logo {
+      }
+      .text {
+        text-align: left;
+        p {
+          font-family: 'Alatsi';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 20px;
+          color: #cfd5dc;
+        }
+        :first-child {
+          font-size: 40px;
+          line-height: 50px;
+          color: #e29b1d;
+        }
+      }
+    }
+
+    .HuralyaSquirrel {
+     // height: 100%;
+      width: 100%;
+      position: relative;
+      
+      .content {
+        width: 100%;
+        //padding: 20px 3.5rem 20px 20px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: left;
+        text-align: left;
+        /* width */
+        ::-webkit-scrollbar {
+          width: 0.2rem;
+          max-height: 50%;
+        }
+        /* Track */
+        ::-webkit-scrollbar-track {
+          //box-shadow: inset 0 0 5px grey;
+          background: linear-gradient(0deg, #898d92, #898d92),
+            linear-gradient(0deg, #898d92, #898d92), #898d92;
+          border-radius: 20px;
+        }
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+          background: linear-gradient(0deg, #cfd5dc, #cfd5dc),
+            linear-gradient(0deg, #898d92, #898d92), #898d92;
+          border-radius: 20px;
+        }
+        /* Handle on hover */
+
+        .scrollableSection {
+          padding: 20px;
+           height: 100%;
+          background-color: rgba(62, 70, 91, 0.54);
+          border-radius: 20px;
+        }
+        .scroll {
+          height: 100%;
+          overflow-y: auto;
+          padding-right: 5px;
+          .section {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-grow: 1;
+            border-bottom: 1px solid #282f42;
+            padding: 0.6rem 0;
+            .text {
+              display: flex;
+              align-items: center;
+              flex-grow: 1;
+              row-gap: 0.3rem;
+              .title {
+                color: #dddedf;
+                min-width: fit-content;
+                
+                font-family: 'Alatsi';
+                display: flex;
+                align-items: center;
+              }
+              .desc {
+                display: flex;
+                align-items: center;
+                color: #898d92;
+                font-size: 12px;
+                flex-grow: 1;
+                font-family: 'Alatsi';
+                padding: 0rem 0.5rem;
+              }
+            }
+
+            .icon {
+              flex-shrink: 0;
+              color: white;
+              width: 25px;
+              height: 25px;
+              cursor: pointer;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            .icon:hover {
+              color: #dccfdb;
+            }
+            .icon:active {
+              transform: scale(1.2);
+            }
+          }
+          .planSection {
+            .text {
+              flex-wrap: wrap;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .rightSection {
+    height: 100%;
+    width: 22%;
+    position: relative;
+    background: rgba(41, 67, 88, 0.86);
+    border-radius: 27px;
+ 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    .topSection {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      row-gap: 10px;
+      .catImg {
+        position: relative;
+        flex-grow: 1;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: fill;
+          mix-blend-mode: lighten;
+        }
+      }
+      .catImg::after {
+        content: '';
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        width: 100%;
+        border-bottom: 2px solid rgb(190, 186, 186);
+      }
+
+      .bottoms {
+        z-index: 1;
+        flex-grow: 1;
+        align-self: stretch;
+        font-size: 17px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 3px;
+
+        .mintBtn {
+          background-color: #181c27;
+          border-radius: 63px 0px 0px 63px;
+          flex-grow: 1;
+          padding: 0.3rem 0;
+          color: #abb1ba;
+          font-family: 'Alatsi';
+          border-width: 2px;
+        }
+        .marketBtn {
+          border-width: 2px;
+          flex-grow: 1;
+          background-color: #181c27;
+          //border: 2px solid #595f71;
+          border-radius: 0px 63px 63px 0px;
+          padding: 0.3rem 0;
+          color: #abb1ba;
+          font-family: 'Alatsi';
+        }
+      }
+      .text {
+        display: flex;
+        align-items: center;
+        column-gap: 3px;
+        font-size: 12px;
+        flex-grow: 1;
+        color: #979b9f;
+        font-family: 'Alatsi';
+        z-index: 1;
+        .icon {
+          color: #e2641d;
+        }
+      }
+    }
+    .circulateSupply {
+      overflow-x: visible;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+
+      .content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: stretch;
+        line-height: 18px;
+        font-size: 13px;
+        color: #979b9f;
+        font-family: 'Alatsi';
+        > div {
+          padding: 10px 0;
+          border-bottom: 1px solid;
+        }
+        > div:last-child {
+          border: none;
+        }
+        > div > div {
+          display: flex;
+          align-items: center;
+          flex-grow: 1;
+          display: flex;
+          justify-content: space-between;
+        }
+      }
+    }
+    .footer {
+      display: flex;
+      column-gap: 10px;
+    }
+  }
+}
+
+
+
+
+
+
+@media only screen and #{$mq-large} {
+  .insigniaNFTPage {
+    .rightSection{
+      width: auto;
+      .circulateSupply {
+        .content {
+          font-size: 0.8rem;
+          padding: 1rem 7% 1rem 10%;
+        }
+      }
+    }
+
+  }
+}
+
+@media only screen and #{$mq-medium} {
+  .insigniaNFTPage {
+
+
+
+    .rightSection {
+      .topSection {
+        .bottoms {
+          font-size: 0.9rem;
+        }
+      }
+
+      .circulateSupply {
+        .content {
+          font-size: 0.7rem;
+          padding: 6%;
+          padding-left: 10%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and #{$mq-small} {
+  .insigniaNFTPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 2rem;
+    height: auto;
+    .investment{
+      width: 100%;
+      height: auto;
+      row-gap: 1rem;
+      .investmentTitle{
+      }
+      .HuralyaSquirrel {
+        width: 100%;
+        .content{
+          height: 350px;
+         // padding: 0;
+          .scrollableSection{
+            //padding: 0;
+            //margin: 0;
+          }
+        }
+      }
+    }
+  
+
+    .rightSection {
+      height: auto;
+      width: 100%;
+      position: relative;
+      text-align: center;
+      margin: 0 auto;
+
+      .topSection {
+        width: 100%;
+       // padding: 15px 15px 15px 0px;
+
+        .catImg {
+          //flex-grow: 0;
+        }
+        .bottoms {
+          padding: 0 20%;
+        }
+        .text {
+          font-size: 1rem;
+        }
+      }
+
+      .circulateSupply {
+        width: 100%;
+        position: relative;
+        .content {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: stretch;
+          padding: 15% 10% 15% 18%;
+  
+          line-height: 2rem;
+          font-size: 1.2rem;
+        }
+      }
+    }
+
+
+  }
+}
+
+@media only screen and #{$mq-xsmall} {
+  //////////////////////////////////////////////////insignia page//////////////
+  .insigniaNFTPage {
+padding: 20px 10px;
+    .investment{
+      
+      .investmentTitle{
+        padding-left: 0;
+        width: 100%;
+        column-gap: 0px;
+        
+        .logo{
+        }
+        .text{
+          p{
+            font-size: 16px;
+          }
+          :first-child{
+            font-size: 25px;
+            line-height: 25px;
+
+          }
+        }
+      }
+      .HuralyaSquirrel {
+        .content {
+          .scrollableSection {
+            padding: 10px;
+            border-radius: 20px;
+          }
+          .scroll {
+            padding-right: 10px;
+            .section {
+              justify-content: space-between;
+              .text {
+                flex-wrap: wrap;
+              }
+              .icon {
+                align-self: flex-start;
+              }
+            }
+          }
+        }
+      }
+  
+    }
+
+    .rightSection {
+      .topSection {
+        display: flex;
+        .text {
+          padding-left: 2rem;
+        }
+      }
+    }
+    .circulateSupply {
+      .content {
+        font-size: 1rem;
+      }
+    }
+  }
+}
